@@ -3,6 +3,25 @@ using System.Text;
 
 namespace ExternalMergeSort;
 
+/// <summary>
+/// Sorts a large file using external merge sort.
+///
+/// The algorithm has two phases:
+///
+/// Phase 1 - Run Generation (pipelined across 3 stages):
+/// <code>
+/// Main (read):  [read 1]         [read 2]         [read 3]         [read 4]
+/// CPU  (sort):           [sort 1]         [sort 2]         [sort 3]
+/// Disk (write):                   [write 1]        [write 2]        [write 3]
+/// </code>
+/// Reading and sorting are overlapped — while the main thread reads the next chunk,
+/// the background thread sorts the previous one. Writes are sequential and never
+/// overlap with reads to avoid SSD contention.
+///
+/// Phase 2 - Merge:
+/// All sorted runs are merged in a single pass using a min-heap, writing the
+/// final sorted output sequentially.
+/// </summary>
 public class ExternalMergeSorter
 {
     private const int WriteBufferSize = 65536;
