@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalMergeSort", "ExternalMergeSort\ExternalMergeSort.csproj", "{BC26D128-3E03-41E4-A0B0-3F5161F0EB60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileGenerator", "FileGenerator\FileGenerator.csproj", "{F72A583D-E8B6-4FD3-ABE2-B4A5E5E2B941}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{7297E6C9-BB62-4B6F-88D6-0895E02470DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC26D128-3E03-41E4-A0B0-3F5161F0EB60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC26D128-3E03-41E4-A0B0-3F5161F0EB60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC26D128-3E03-41E4-A0B0-3F5161F0EB60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC26D128-3E03-41E4-A0B0-3F5161F0EB60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F72A583D-E8B6-4FD3-ABE2-B4A5E5E2B941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F72A583D-E8B6-4FD3-ABE2-B4A5E5E2B941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F72A583D-E8B6-4FD3-ABE2-B4A5E5E2B941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F72A583D-E8B6-4FD3-ABE2-B4A5E5E2B941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7297E6C9-BB62-4B6F-88D6-0895E02470DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7297E6C9-BB62-4B6F-88D6-0895E02470DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7297E6C9-BB62-4B6F-88D6-0895E02470DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7297E6C9-BB62-4B6F-88D6-0895E02470DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
